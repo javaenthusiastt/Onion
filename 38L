@@ -652,6 +652,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		UIHidden = true
 		OrionLib:MakeNotification({
 			Name = "38L Menu Closed",
+			Content = "You closed the Menu.",
 			Time = 3
 		})
 		WindowConfig.CloseCallback()
