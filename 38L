@@ -648,6 +648,12 @@ function OrionLib:MakeWindow(WindowConfig)
 	AddConnection(CloseBtn.MouseButton1Up, function()
 		MainWindow.Visible = false
 		UIHidden = true
+		OrionLib:MakeNotification({
+			Name = "Title!",
+			Content = "Notification content... what will it say??",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
 		WindowConfig.CloseCallback()
 	end)
 
